@@ -20,7 +20,7 @@ module.exports = {
     }
   },
   move: {
-    'docker-*': './'
+    'docker-*'
   },
   filters: filters,
   post({chalk, folderName, answers, log}) {
