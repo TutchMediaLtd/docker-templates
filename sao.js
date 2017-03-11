@@ -16,5 +16,5 @@ module.exports = {
       choices: types
     }
   },
-  templateFolder: `${answers.type}`
+  templateFolder: "<%= type %>"
 }
