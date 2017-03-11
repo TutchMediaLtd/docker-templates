@@ -19,11 +19,5 @@ module.exports = {
       choices: types
     }
   },
-  move: {
-    'docker-*'
-  },
-  filters: filters,
-  post({chalk, folderName, answers, log}) {
-    log.success(`${answers.type} lol is successfully generated in ${folderName}`)
-  }
+  templateFolder: ${answers.type}
 }
