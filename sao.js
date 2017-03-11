@@ -1,6 +1,12 @@
 const fs = require('fs')
 const path = require('path')
 
+const types = [
+  'docker-craft',
+  'docker-wordpress',
+  'docker-static',
+]
+
 module.exports = {
   enforceCurrentFolder: true,
   prompts: {
@@ -10,5 +16,5 @@ module.exports = {
       choices: types
     }
   },
-  templateFolder: "${answers.type}"
+  templateFolder: `${answers.type}`
 }
