@@ -16,5 +16,7 @@ module.exports = {
       choices: types
     }
   },
-  templateFolder: "<%= type %>"
+  post({chalk, folderName, answers, log}) {
+    templateFolder: `${answers.type}`
+  }
 }
